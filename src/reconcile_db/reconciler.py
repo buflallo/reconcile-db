@@ -6,10 +6,10 @@ class Reconciler():
 
     def __init__(self, provider: str, size: int, compute: str, status: DatabaseStatus) -> None:
         self.database = {
-            "provider": "PostgreSql",
-            "size": 10,
-            "compute": "medium",
-            "status": DatabaseStatus.RUNNING,
+            "provider": provider,
+            "size": size,
+            "compute": compute,
+            "status": status,
         }
 
     def is_database_running(self) -> bool:
