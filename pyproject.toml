@@ -1,7 +1,7 @@
 [project]
 name = "reconcile-db"
 version = "0.1.0"
-description = "reconcilee loop for managed databases"
+description = "reconcile loop for managed databases"
 readme = "README.md"
 authors = [
     { name = "buflallo", email = "ha.lachqar@gmail.com" }

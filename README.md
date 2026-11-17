@@ -1,4 +1,4 @@
-# reconcilee-db
+# reconcile-db
 
 Python 3.12, SQLite, with a fake provider. Written by hand.
 
