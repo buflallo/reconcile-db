@@ -1,8 +1,8 @@
+from reconcile_db import Reconcile
+
 def test_smoke() -> None:
     """
-    A simple smoke test to ensure that the application starts without errors.
+    A simple smoke test to ensure that service is working correctly.
     """
-    try:
-        print("Smoke test passed: Application started successfully.")
-    except Exception as e:
-        print(f"Smoke test failed: {e}")
+    reconcile = Reconcile(provider="PostgreSql", size=10, compute="medium", status="RUNNING")
+    assert reconcile.IsDatabaseRunning() is True
