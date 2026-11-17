@@ -2,7 +2,7 @@
 
 Python 3.12, SQLite, with a fake provider. Written by hand.
 
-A hand-written reconcilee loop for managed databases (desired vs. actual state, crashes, leases), rebuilding the core of the DBaaS I built at AZUL Cloud.
+A hand-written reconcile loop for managed databases (desired vs. actual state, crashes, leases), rebuilding the core of the DBaaS I built at AZUL Cloud.
 
 ## The world
 
