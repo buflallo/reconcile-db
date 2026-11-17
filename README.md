@@ -1,6 +1,8 @@
-# reconcile-db
+# reconcilee-db
 
 Python 3.12, SQLite, with a fake provider. Written by hand.
+
+A hand-written reconcilee loop for managed databases (desired vs. actual state, crashes, leases), rebuilding the core of the DBaaS I built at AZUL Cloud.
 
 ## The world
 
@@ -53,14 +55,3 @@ Provider errors come in three classes:
 - A stuck provider ends in `STALLED`
 - Each error class leads to its own action
 
-## Homework before day 3: six questions
-
-1. When several fields differ, which step comes first, and why?
-2. How do you tell an operation that’s still running from one that was lost?
-3. For “is an operation in flight?”, which is the truth: your store or the
-   provider?
-4. What do you write before a provider call, and what after? What if you crash
-   between the two?
-5. What happens if a lease expires while its worker is still working?
-6. When exactly does an operation become `STALLED`, and what evidence do you
-   record?
